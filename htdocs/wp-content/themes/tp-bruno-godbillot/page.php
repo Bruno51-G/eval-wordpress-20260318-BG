@@ -23,6 +23,7 @@ get_header();
             
         </article>
 
+        
         <?php 
             endwhile;
         else:

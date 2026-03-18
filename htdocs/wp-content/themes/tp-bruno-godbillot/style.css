@@ -1,3 +1,138 @@
 /*
 Theme Name: eval-wordpress-18/03/2026
 */
+
+:root{
+    --light: #FFFFFF;
+    --dark: #000000;
+    --premiere: #1E5AA8;
+    --deuxième: #84DBF0;
+    --troisieme: #5E92DC;
+    --quatrieme: #808080;
+    --cinquieme: #D3D3D3;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--premiere);
+    background: linear-gradient(90deg,rgba(30, 90, 168, 1) 46%, rgba(94, 146, 220, 1) 93%);
+}
+
+.logo{
+    width: 50%;
+}
+
+.logoTitre{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.menu a{
+    text-decoration: none;
+    color: #1E5AA8;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--deuxième);
+    padding: 1.5rem;
+    border: 2px solid var(--quatrieme);
+    transition: all ease .4s;
+}
+
+
+.menu a:hover{
+    color: var(--dark);
+    background-color: var(--troisieme);
+    transform: scale(1.05);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main > h1{
+    width: 100%;
+}
+
+.montheme-article-grid{
+    flex: 1;
+    min-width: 50%;
+    text-align: justify;
+}
+
+aside{
+    min-width: 20%;
+    padding-left: 2rem;
+    list-style: none;
+}
+
+article{
+    border: 2px solid var(--troisieme);
+    background-color: var(--cinquieme);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+p a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--premiere);
+    border: 2px solid var(--dark);
+    padding: 1rem;
+
+}
+
+p a:hover{
+    background-color: var(--deuxième);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #5E92DC;
+    background: linear-gradient(90deg,rgba(94, 146, 220, 1) 46%, rgba(30, 90, 168, 1) 93%);
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 7rem;
+}
+
+footer a{
+    color: var(--dark);
+    text-decoration: none;
+    border: 1px solid var(--cinquieme);
+    padding: 1rem;
+}
+
+footer a:hover{
+    background-color: var(--deuxième);
+}
