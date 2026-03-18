@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<h1>INDEX.PHP</h1>
+<h1>FRONT-PAGE.PHP</h1>
 <div class="montheme-article-grid">
     <?php 
         if(have_posts()):
@@ -24,6 +24,14 @@ get_header();
         endif;
         ?>
 </div>
+
+<aside>
+    <h3>SIDEBAR</h3>
+    <h4>Widgets</h4>
+    <?php
+        dynamic_sidebar('main-sidebar');
+    ?>
+</aside>
 
 <?php
 get_footer();

@@ -13,8 +13,15 @@
 <?php wp_body_open(); ?>
 
 <header class="site-header">
+    <img class="logo" src="<?= get_stylesheet_directory_uri() ?>/img/banner.jpg">
     <p class="logoTitre"><?php bloginfo('name'); ?></p>
 </header>
+
+<nav>
+    <?php wp_nav_menu([
+        'theme_location' => 'main'
+    ]) ?>
+</nav>
     
 <main>
 

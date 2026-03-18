@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<h1>INDEX.PHP</h1>
+<h1>HOME.PHP</h1>
 <div class="montheme-article-grid">
     <?php 
         if(have_posts()):
